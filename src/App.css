@@ -29,12 +29,6 @@ body {
   transition: background-color 0.3s, color 0.3s;
 }
 
-header {
-  background-color: var(--header-bg);
-  color: var(--header-text);
-  transition: background-color 0.3s, color 0.3s;
-}
-
 header a {
   color: var(--header-text);
   transition: color 0.3s;
@@ -50,6 +44,12 @@ nav ul li {
 
 nav ul li a {
   color: var(--header-text);
+  transition: color 0.3s ease;
+}
+
+h2,
+h3,
+p {
   transition: color 0.3s ease;
 }
 

@@ -8,22 +8,15 @@ function App() {
   const [darkMode, setDarkMode] = useState(false);
 
   const toggleDarkMode = () => {
-    setDarkMode((darkMode) => {
-      if (!darkMode) {
-        document.documentElement.classList.add("dark-mode");
-      } else {
-        document.documentElement.classList.remove("dark-mode");
-      }
-      return !darkMode;
-    });
+    setDarkMode((darkMode) => !darkMode);
   };
 
   return (
-    <>
+    <div className={darkMode ? "dark-mode" : "light-mode"}>
       <Header toggleDarkMode={toggleDarkMode} darkMode={darkMode} />
       <ProductList />
       <Footer />
-    </>
+    </div>
   );
 }
 

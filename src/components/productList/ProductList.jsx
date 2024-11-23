@@ -17,7 +17,7 @@ const ProductList = () => {
   }
 
   return (
-    <div>
+    <div className={styles.productMenu}>
       <h2>Product List</h2>
       <button onClick={handleClick} className={styles.btn}>
         {status ? "Ẩn" : "Hiện"} Sản phẩm
